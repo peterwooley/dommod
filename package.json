@@ -1,6 +1,6 @@
 {
   "name": "dommod",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Load up some HTML, modify it with JavaScript, and output the modified DOM!",
   "main": "index.js",
   "bin": "./cli.js",
