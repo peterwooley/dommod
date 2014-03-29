@@ -1,20 +1,23 @@
 # DOMMod
+If you need to modify some HTML in a way that can't be accomplished with a simple Find & Replace and [using RegEx doesn't feel quite right](http://stackoverflow.com/a/1732454/1245595) then DOMMod can help.
+
 Load up some HTML, modify it with JavaScript ([care of Cheerio](https://github.com/MatthewMueller/cheerio)), and output the modified DOM!
 
 # Examples
-## In Node
-```js
-var dommod = require('dommod');
-var html = "<html><body class='test'></body></html>";
-var script = "dom('body').removeAttr('class')";
-dommod(html, script) // Returns <html><body></body></html>
-```
 ## Command-line
 ```sh
 $ npm install dommod -g
 $ echo "<html><body class='test'></body></html>" > dom.html
 $ dommod "dom('body').removeAttr('class')" dom.html 
 <html><body></body></html>
+```
+
+## In Node
+```js
+var dommod = require('dommod');
+var html = "<html><body class='test'></body></html>";
+var script = "dom('body').removeAttr('class')";
+dommod(html, script) // Returns <html><body></body></html>
 ```
 
 # Gotcha
