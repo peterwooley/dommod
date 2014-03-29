@@ -1,9 +1,10 @@
 {
   "name": "dommod",
   "version": "0.0.1",
-  "description": "Read in HTML, Modify it, and Output the results.",
+  "description": "Load up some HTML, modify it with JavaScript, and output the modified DOM!",
   "main": "index.js",
   "bin": "./cli.js",
+  "repository": "https://github.com/peterwooley/dommod.git",
   "dependencies": {
     "cheerio": "^0.13.1"
   },
